@@ -1,0 +1,130 @@
+body{
+    background-color: $beige-color;
+}
+/*Cuerpo pagina principal arriba*/
+.section-main-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    min-height: 90vh;
+    max-height: 100%;
+}
+.main-basic {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 3%;
+    margin-top: 3%;
+    align-items: center;
+    justify-content: center;
+
+    .main-basic-left {
+        color: $black-color;
+        max-width: 500px;
+        align-self: center;
+        justify-self: center;
+    }
+    .main-title{
+        font-family:"Playpen Sans", cursive;
+        font-size: 3rem;
+    }
+    .main-basic-lorem {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: 1.2rem;
+        padding-bottom: 10px;
+    }
+    .main-basic-about {
+        font-family: "Playpen Sans", cursive;
+        font-size: 1.5rem;
+        color: $black-color;
+    }
+    img {
+        height: 380px;
+        width: 380px;
+    }
+}
+
+/*cuerpo pagina principal abajo*/
+
+.main-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 8%;
+    margin-top: 10px;
+    padding: 25px;
+    width: fit-content;
+    background-color: $blue-color;
+    border-color: $black-color;
+    border-style: groove;
+    color: $white-color;
+    position: absolute;
+    bottom: -25% ;
+
+    .main-redes h2 {
+        font-size: x-large;
+        font-family: "Playpen Sans", cursive;
+    }
+    .main-logos {
+        text-decoration: none;
+        a svg{
+            width: 40px;
+            height: 40px;
+            color: $white-color;
+            transition: 0.5s;
+            &:hover{
+                transform:scale(1.2)
+            }
+        }
+    }
+}
+
+/* pagina principal productos*/
+.section-main-products{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-tarjetita{
+    background-color: $green-color;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+  & img{
+    max-width: 436px;
+    width: 100%;
+    max-height: 436px;
+    height: 100%;
+    justify-self: end;
+    border-radius: 10px;
+  }
+  .main-text{
+    color: $black-color;
+    font-family: "Playpen Sans", cursive;
+    font-size: 35px;
+    align-self: end;
+    justify-self: end;
+    max-width: 400px;
+    margin-bottom: 15px;
+ }
+ .main-products-link{
+    color: $black-color;
+    align-self: start;
+    justify-self: center;
+    font-size: 30px;
+ }
+ 
+}
+
+
+

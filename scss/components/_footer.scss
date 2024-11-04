@@ -1,0 +1,33 @@
+/*footer general*/
+.footer {
+    background-color: $blue-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.footer-ul {
+    width: 100%;
+    display: flex;
+    padding-top: 0.5rem;
+    gap: 6%;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-ul p {
+    font-size: 1rem;
+    margin: 0;
+}
+.footer-ul h1{
+    color: $green-color;
+    font-size: 1rem;
+}
+.footer-link {
+    text-decoration: none;
+    color: $white-color;
+}

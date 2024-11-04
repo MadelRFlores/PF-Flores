@@ -1,0 +1,87 @@
+.aritos-titulo {
+    background-color: $beige-color;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+    gap: 15px;
+
+    h1 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 3rem;
+        color: $black-color;
+    }
+    p {
+        font-family: "Playpen Sans", cursive;
+        font-size: 1.5rem;
+        color: $black-color;
+        text-align: center;
+    }
+}
+
+/*productos*/
+.aritos-products {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "area1 area2 area3"
+        "area4 area5 area6"
+        "area7 area8 area9";
+    gap: 40px;
+    margin: 4%;
+    justify-content: center;
+    .carta-flores {
+        grid-area: area1;
+    }
+    .chanchito {
+        grid-area: area2;
+    }
+    .reliquias-kuromis {
+        grid-area: area3;
+    }
+    .eclipse {
+        grid-area: area4;
+    }
+    .veneno {
+        grid-area: area5;
+    }
+    .cruces {
+        grid-area: area6;
+    }
+    .hachas {
+        grid-area: area7;
+    }
+    .trex {
+        grid-area: area8;
+    }
+    .thesun {
+        grid-area: area9;
+        justify-self: center;
+    }
+}
+.aritos-card {
+    background-color: $green-color;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    h3 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: $black-color;
+        font-size: 24px;
+        align-self: center;
+        padding: 10px;
+    }
+    h4 {
+        font-family: "Playpen Sans", cursive;
+        font-size: 14px;
+        color: $black-color;
+        align-self: center;
+    }
+}

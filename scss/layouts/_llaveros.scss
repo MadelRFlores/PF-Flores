@@ -1,0 +1,126 @@
+/*LLAVEROS*/
+.llaveros-texto{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 8rem 5rem;
+    grid-template-areas: 
+    'area1 area2'
+    'area3 area4';
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: $black-color;
+    background-color: $beige-color;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .llaveros-area1{
+        grid-area: area1;
+        align-self: end;
+        justify-self: center;
+        font-size: 3.5rem;
+    }
+    .llaveros-area2{
+        grid-area: area2;
+        align-self: end;
+        justify-self: start;
+        margin-top: 20px;
+        width: 95%;
+        font-size: 22px;
+    }
+    .llaveros-area3{
+        grid-area: area3;
+        align-self: center;
+        justify-self: center;
+        padding-top: 20px;
+        font-size: 22px;
+        width: 90%;
+    }
+    .llaveros-instagram{
+        grid-area: area4;
+        align-self: center;
+        justify-self: center;
+        padding-top: 40px;
+        font-size: 22px;
+        & a{
+            color: $black-color;
+            font-size: 20px;
+        }
+    }
+}
+
+.llaveros-card{
+    img{
+        width: 90%;
+        height: 90%;
+        border-radius: 2%;
+    } 
+    background-color: $green-color;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 70% 30%;
+    grid-template-areas: 
+    'area1 area2 area3 area4'
+    'area5 area5 area6 area6';
+    gap: 10px;
+    padding: 30px;
+    margin: 30px;
+
+    .card-a1{
+        grid-area: area1;
+    }
+    .card-a2{
+        grid-area: area2;
+    }
+    .card-a3{
+        grid-area: area3;
+    }
+    .card-a4{
+        grid-area: area4;
+    }
+    .card-text{
+        grid-area: area5;
+        color: $black-color;
+        font-family: "Playpen Sans", cursive;
+        font-size: 22px;
+        text-align: center;
+        width: 80%;
+        margin-left: 10px;
+    }
+    .card-precio{
+        grid-area: area6;
+        color: $black-color;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+
+.llaveros-inspo{
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    color: $black-color;
+    font-family: "Playpen Sans", cursive;
+    font-size: 22px;
+    text-align: center;
+    width: 80%;
+    border-radius: 10px;
+    background-color: $green-color;
+    padding: 20px;
+    align-items: center;
+    margin-left: 10%;
+
+    a{
+        color: $white-color;
+    }
+}
+
+ 
